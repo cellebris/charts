@@ -1,4 +1,0 @@
-{{/*
-Generate the Nexical Core Interface4 service definition
-*/}}
-{{ include "zimagi-lib.app" (list . .Values) }}
