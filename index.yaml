@@ -1,0 +1,30 @@
+apiVersion: v1
+entries:
+  knowledge-admin:
+  - apiVersion: v2
+    created: "2024-12-22T00:08:58.932824106Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.x.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 19.x.x
+    - name: zimagi-lib
+      repository: https://charts.zimagi.com
+      version: 0.1.6
+    description: A Helm chart for deploying the Cellebris Knowledge Admin Interface.
+    digest: 4bad6a7c295fe527717200cbf067ee3c70109ea9127e55737a86565f310cd444
+    home: https://github.com/cellebris/charts
+    maintainers:
+    - email: adrian@cellebris.com
+      name: adrianwebb
+      url: https://github.com/adrianwebb
+    name: knowledge-admin
+    type: application
+    urls:
+    - https://github.com/cellebris/charts/releases/download/knowledge-admin-0.1.1/knowledge-admin-0.1.1.tgz
+    version: 0.1.1
+generated: "2024-12-22T00:08:58.932834174Z"
