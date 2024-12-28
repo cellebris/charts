@@ -27,4 +27,23 @@ entries:
     urls:
     - https://github.com/cellebris/charts/releases/download/knowledge-admin-0.1.1/knowledge-admin-0.1.1.tgz
     version: 0.1.1
-generated: "2024-12-22T00:08:58.932834174Z"
+  knowledge-interface:
+  - apiVersion: v2
+    created: "2024-12-28T15:32:04.188724994Z"
+    dependencies:
+    - name: zimagi-lib
+      repository: https://charts.zimagi.com
+      version: 0.1.6
+    description: A Helm chart for deploying the Cellebris Knowledge Center Interface.
+    digest: 3e6c31e736603e1ecbe22a68e6ff9199af874fce914f05296430bd635e320bcc
+    home: https://github.com/cellebris/charts
+    maintainers:
+    - email: adrian@cellebris.com
+      name: adrianwebb
+      url: https://github.com/adrianwebb
+    name: knowledge-interface
+    type: application
+    urls:
+    - https://github.com/cellebris/charts/releases/download/knowledge-interface-0.1.0/knowledge-interface-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-12-28T15:32:04.188747035Z"
