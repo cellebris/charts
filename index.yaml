@@ -55,6 +55,28 @@ entries:
     version: 0.1.1
   knowledge-interface:
   - apiVersion: v2
+    created: "2025-05-22T10:42:56.322215422Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.x.x
+    - name: zimagi-lib
+      repository: https://charts.zimagi.com
+      version: 0.1.6
+    description: A Helm chart for deploying the Cellebris Knowledge Center Interface.
+    digest: 316ca0e5d62151ad02ebf58d3cb8a0f831181bb05fb2ec5c3d28809defed57f4
+    home: https://github.com/cellebris/charts
+    maintainers:
+    - email: adrian@cellebris.com
+      name: adrianwebb
+      url: https://github.com/adrianwebb
+    name: knowledge-interface
+    type: application
+    urls:
+    - https://github.com/cellebris/charts/releases/download/knowledge-interface-0.1.1/knowledge-interface-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     created: "2024-12-28T15:32:04.188724994Z"
     dependencies:
     - name: zimagi-lib
@@ -72,4 +94,4 @@ entries:
     urls:
     - https://github.com/cellebris/charts/releases/download/knowledge-interface-0.1.0/knowledge-interface-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-28T23:07:19.572531436Z"
+generated: "2025-05-22T10:42:56.32223028Z"
