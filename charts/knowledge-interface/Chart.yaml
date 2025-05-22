@@ -1,5 +1,5 @@
 apiVersion: v2
-version: 0.1.1
+version: 0.1.2
 
 name: knowledge-interface
 type: application
@@ -7,15 +7,15 @@ description: A Helm chart for deploying the Cellebris Knowledge Center Interface
 home: https://github.com/cellebris/charts
 
 dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 15.x.x
-    - name: zimagi-lib
-      repository: https://charts.zimagi.com
-      version: 0.1.6
+  - condition: postgresql.enabled
+    name: postgresql
+    repository: https://charts.bitnami.com/bitnami
+    version: 16.x.x
+  - name: reactor
+    repository: https://charts.kube-reactor.com
+    version: 0.2.x
 
 maintainers:
-    - email: adrian@cellebris.com
-      name: adrianwebb
-      url: https://github.com/adrianwebb
+  - email: adrian@cellebris.com
+    name: adrianwebb
+    url: https://github.com/adrianwebb
