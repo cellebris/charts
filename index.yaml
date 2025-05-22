@@ -2,6 +2,32 @@ apiVersion: v1
 entries:
   knowledge-admin:
   - apiVersion: v2
+    created: "2025-05-22T20:38:49.88525828Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x.x
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 21.x.x
+    - name: reactor
+      repository: https://charts.kube-reactor.com
+      version: 0.2.x
+    description: A Helm chart for deploying the Cellebris Knowledge Admin Interface.
+    digest: 72af23b21d3bde302b4b4c86b4b0d53215586d2054e9d1dc95f497101c4624d0
+    home: https://github.com/cellebris/charts
+    maintainers:
+    - email: adrian@cellebris.com
+      name: adrianwebb
+      url: https://github.com/adrianwebb
+    name: knowledge-admin
+    type: application
+    urls:
+    - https://github.com/cellebris/charts/releases/download/knowledge-admin-0.1.3/knowledge-admin-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
     created: "2024-12-28T23:07:19.572518061Z"
     dependencies:
     - condition: postgresql.enabled
@@ -55,6 +81,28 @@ entries:
     version: 0.1.1
   knowledge-interface:
   - apiVersion: v2
+    created: "2025-05-22T20:38:49.998479076Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.x.x
+    - name: reactor
+      repository: https://charts.kube-reactor.com
+      version: 0.2.x
+    description: A Helm chart for deploying the Cellebris Knowledge Center Interface.
+    digest: af4933192d078112790d90bd0551a2c38b4ead827f1384941cab06c5dc7f1f4a
+    home: https://github.com/cellebris/charts
+    maintainers:
+    - email: adrian@cellebris.com
+      name: adrianwebb
+      url: https://github.com/adrianwebb
+    name: knowledge-interface
+    type: application
+    urls:
+    - https://github.com/cellebris/charts/releases/download/knowledge-interface-0.1.2/knowledge-interface-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     created: "2025-05-22T10:42:56.322215422Z"
     dependencies:
     - condition: postgresql.enabled
@@ -94,4 +142,4 @@ entries:
     urls:
     - https://github.com/cellebris/charts/releases/download/knowledge-interface-0.1.0/knowledge-interface-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-22T10:42:56.32223028Z"
+generated: "2025-05-22T20:38:49.998513049Z"
